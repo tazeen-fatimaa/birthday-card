@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday E-Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <!-- Envelope Screen -->
+        <div id="envelope-screen">
+            <div id="envelope">
+                <div id="envelope-lid"></div>
+                <div id="envelope-body"></div>
+            </div>
+            <p id="tap-text">Tap anywhere to open your surprise ✨</p>
+        </div>
+
+        <!-- Card -->
+        <div id="card">
+            <!-- Front -->
+            <div id="card-front">
+                <h1>Happiest Birthday</h1>
+                <div id="cake-container">
+                    <img src="images/cake.png" alt="Cake" id="cake">
+                </div>
+                <p>It's your big day, smile and dance 🎉</p>
+            </div>
+
+            <!-- Back -->
+            <div id="card-back">
+                <h1>Flowers for you 🌸</h1>
+                <div id="flowers">
+                    <img src="images/flower.png" alt="Flower" class="flower">
+                    <img src="images/flower.png" alt="Flower" class="flower">
+                    <img src="images/flower.png" alt="Flower" class="flower">
+                </div>
+                <textarea id="message-input" placeholder="Write your birthday message here..."></textarea>
+                <div id="buttons">
+                    <button id="done-btn">Done & Copy Link</button>
+                    <button id="flip-btn">Flip to Front</button>
+                </div>
+                <p id="message-display"></p>
+            </div>
+        </div>
+
+        <!-- Balloons -->
+        <div id="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+
+        <!-- Confetti Canvas -->
+        <canvas id="confetti-canvas"></canvas>
+
+        <!-- Audio -->
+        <audio id="birthday-audio" src="birthday.mp3" loop></audio>
+
+        <!-- Mute Button -->
+        <button id="mute-btn">🔊</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
